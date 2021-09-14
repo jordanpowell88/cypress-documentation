@@ -181,7 +181,7 @@ npm install --save-dev cypress-multi-reporters mocha-junit-reporter
 ```
 
 Specify your reporter and reporterOptions in your configuration file
-(`cypress.json` by default) or via the
+ or via the
 [command line](/guides/guides/command-line).
 
 #### Config file

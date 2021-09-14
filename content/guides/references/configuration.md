@@ -221,8 +221,7 @@ You can override configuration for either the E2E or
 
 #### Examples
 
-Component Testing specific viewports in configuration file (`cypress.json` by
-default):
+Component Testing specific viewports in configuration file:
 
 ```json
 {
