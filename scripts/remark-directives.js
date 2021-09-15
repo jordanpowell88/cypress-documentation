@@ -31,27 +31,38 @@ function addDirective({ type, name, processNode }) {
   directivesByType[type][name] = processNode
 }
 
-function processNode(node, index, parent) {
-  const { type, name } = node
-
-  const fn = (directivesByType[type] || {})[name]
-
-  if (fn) {
-    // eslint-disable-next-line no-console
-    console.log('process directive', type, name)
-
-    const result = fn(node, { index, parent, processor })
-
-    if (result !== undefined) {
-      const parsed = processor.parse(result)
-
-      parent.children.splice(index, 1, ...parsed.children)
-    }
-  }
-}
-
 module.exports = function directiveAttacher() {
-  return function transform(tree) {
+  /* eslint-disable no-console */
+  return function transform(tree, file) {
+    function processNode(node, index, parent) {
+      const { type, name } = node
+
+      const fn = (directivesByType[type] || {})[name]
+
+      if (fn) {
+        const prefix = `[${name} directive]`
+        const error = (...args) => {
+          console.error(prefix, ...args)
+        }
+        const warn = (...args) => {
+          console.warn(prefix, ...args)
+        }
+
+        let result
+
+        try {
+          result = fn(node, { index, parent, processor, error, warn })
+        } catch (err) {
+          return error(`[${name}]`, err)
+        }
+
+        if (result !== undefined) {
+          const parsed = processor.parse(result)
+
+          parent.children.splice(index, 1, ...parsed.children)
+        }
+      }
+    }
     visit(tree, processNode)
   }
 }
