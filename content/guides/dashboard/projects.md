@@ -57,8 +57,10 @@ Make sure you [install](/guides/getting-started/installing-cypress) and
    record key.
    <DocsImage src="/img/dashboard/projects/setup-a-project-5.png" alt="Record Instructions" no-border></DocsImage>
 9. After setting up your project, Cypress inserts a unique
-   [projectId](#Identification) into your configuration file. If you're using source control, we recommend that you check your
-   configuration file, including the `projectId`, into source control.
+   [projectId](#Identification) into your
+   [configuration file](/guides/references/configuration). If you're using
+   source control, we recommend that you check your configuration file,
+   including the `projectId`, into source control.
 10. Within [Continuous Integration](/guides/continuous-integration/introduction)
     or from your local computer's terminal pass the displayed
     [Record Key](#Identification) while running the
@@ -96,7 +98,7 @@ together to uniquely identify projects.
 Once you set up your project to record, we generate a unique `projectId` for
 your project and automatically insert it into your configuration file file.
 
-#### The `projectId` is a 6 character string in your configuration file
+#### The `projectId` is a 6 character string in your [configuration file](/guides/references/configuration)
 
 ```json
 {

@@ -48,8 +48,10 @@ certificate/private key pair** or a **PFX certificate container**.
 
 ## Usage
 
-To configure CA / client certificates within your configuration file, you can add the `clientCertificates` key to define
-an array of client certificates as shown below:
+To configure CA / client certificates within your
+[configuration file](/guides/references/configuration), you can add the
+`clientCertificates` key to define an array of client certificates as shown
+below:
 
 ```json
   "clientCertificates": [

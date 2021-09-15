@@ -35,7 +35,8 @@ of our open source
 You can load
 [custom Mocha reporters](https://mochajs.org/api/tutorial-custom-reporter.html)
 through a relative or absolute path. These can be specified in your
-configuration file or via the [command line](/guides/guides/command-line).
+[configuration file](/guides/references/configuration) or via the
+[command line](/guides/guides/command-line).
 
 For example, if you have the following directory structure:
 
@@ -49,7 +50,7 @@ For example, if you have the following directory structure:
 
 You would specify the path to your custom reporter in either of the ways below.
 
-#### Configuration file
+#### [Configuration file](/guides/references/configuration)
 
 ```json
 {
@@ -94,7 +95,7 @@ which options are supported.
 The below configuration will output the JUnit report to `STDOUT` and save it
 into an XML file.
 
-#### Configuration file
+#### [Configuration file](/guides/references/configuration)
 
 ```json
 {
@@ -125,7 +126,7 @@ party tool. For example, for the
 [Mochawesome](https://github.com/adamgruber/mochawesome) reporter, you can use
 the [mochawesome-merge](https://github.com/antontelesh/mochawesome-merge) tool.
 
-#### Configuration file
+#### [Configuration file](/guides/references/configuration)
 
 ```json
 {
@@ -184,7 +185,7 @@ Specify your reporter and reporterOptions in your configuration file
  or via the
 [command line](/guides/guides/command-line).
 
-#### Configuration file
+#### [Configuration file](/guides/references/configuration)
 
 ```json
 {
@@ -259,11 +260,11 @@ We need to install some additional dependencies.
 npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator
 ```
 
-We need to configure the reporter in your
-[configuration file](/guides/references/configuration) to skip the HTML report
-generation and save each individual JSON file in the `cypress/results` folder.
+We need to configure the reporter in your configuration file to skip the HTML
+report generation and save each individual JSON file in the `cypress/results`
+folder.
 
-#### Configuration file
+#### [Configuration file](/guides/references/configuration)
 
 ```json
 {

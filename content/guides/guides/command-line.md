@@ -168,9 +168,9 @@ Only valid when providing a `--group` or `--parallel` flag. Read our
 
 #### `cypress run --config <config>`
 
-Set [configuration](/guides/references/configuration) values. Separate multiple
-values with a comma. The values set here override any values set in your
-configuration file.
+Set [configuration file](/guides/references/configuration) values. Separate
+multiple values with a comma. The values set here override any values set in
+your configuration file.
 
 ```shell
 cypress run --config pageLoadTimeout=100000,watchForFileChanges=false
@@ -198,7 +198,7 @@ testing locally and in dedicated CI jobs. Examples:
 #### `cypress run --config-file <configuration-file>`
 
 You can specify a path to a file where
-[configuration](/guides/references/configuration) values are set.
+[configuration file](/guides/references/configuration) values are set.
 
 ```shell
 cypress run --config-file tests/<configuration-file>
@@ -480,7 +480,8 @@ cypress open [options]
 
 Options passed to `cypress open` will automatically be applied to the project
 you open. These persist on all projects until you quit the Cypress Test Runner.
-These options will also override values in your configuration file.
+These options will also override values in your
+[configuration file](/guides/references/configuration).
 
 | Option                | Description                                                                                                                   |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -516,9 +517,9 @@ Microsoft Edge and Brave) and Firefox are supported.
 
 #### `cypress open --config <config>`
 
-Set [configuration](/guides/references/configuration) values. Separate multiple
-values with a comma. The values set here override any values set in your
-configuration file.
+Set [configuration file](/guides/references/configuration) values. Separate
+multiple values with a comma. The values set here override any values set in
+your configuration file.
 
 ```shell
 cypress run --config pageLoadTimeout=100000,watchForFileChanges=false
@@ -527,7 +528,7 @@ cypress run --config pageLoadTimeout=100000,watchForFileChanges=false
 #### `cypress open --config-file <configuration-file>`
 
 You can specify a path to a file where
-[configuration](/guides/references/configuration) values are set.
+[configuration file](/guides/references/configuration) values are set.
 
 ```shell
 cypress open --config-file tests/<configuration-file>

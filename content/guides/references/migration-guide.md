@@ -1086,7 +1086,7 @@ vars
 CYPRESS_RETRIES=2 cypress run
 ```
 
-#### Configure test retries in the configuration file
+#### Configure test retries in the [configuration file](/guides/references/configuration)
 
 <Badge type="danger">Before</Badge> Setting retries with
 `cypress-plugin-retries` via configuration
@@ -1307,8 +1307,9 @@ The `blacklistHosts` configuration has been renamed to
 behavior.
 
 This should be updated in all places where Cypress configuration can be set
-including the via the configuration file, command line arguments, the
-`pluginsFile`, `Cypress.config()` or environment variables.
+including the via the [configuration file](/guides/references/configuration),
+command line arguments, the `pluginsFile`, `Cypress.config()` or environment
+variables.
 
 <Badge type="danger">Before</Badge> `blacklistHosts` configuration in
 `cypress.json`

@@ -122,7 +122,8 @@ this:
 ```
 
 The Component Testing runner will use all the configuration at the root level of
-your configuration file and apply any Component Testing specific overrides.
+your [configuration file](/guides/references/configuration) and apply any
+Component Testing specific overrides.
 
 ### Install
 

@@ -49,7 +49,7 @@ Just like the [Command Line options](/guides/guides/command-line) for
 | ----------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `browser`         | _string_           | Specify different browser to run tests in, either by name or by filesystem path                                                                                    |
 | `ciBuildId`       | _string_           | Specify a unique identifier for a run to enable [grouping](/guides/guides/parallelization#Grouping-test-runs) or [parallelization](/guides/guides/parallelization) |
-| `config`          | _object_           | Specify [configuration](/guides/references/configuration)                                                                                                          |
+| `config`          | _object_           | Specify [configuration file](/guides/references/configuration)                                                                                                     |
 | `configFile`      | _string / boolean_ | Path to the config file to be used. If `false` is passed, no config file will be used.                                                                             |
 | `env`             | _object_           | Specify [environment variables](/guides/guides/environment-variables)                                                                                              |
 | `group`           | _string_           | [Group](/guides/guides/parallelization#Grouping-test-runs) recorded tests together under a single run                                                              |
@@ -282,7 +282,7 @@ options that modify how Cypress runs.
 | Option        | Type               | Description                                                                            |
 | ------------- | ------------------ | -------------------------------------------------------------------------------------- |
 | `browser`     | _string_           | Specify a filesystem path to a custom browser                                          |
-| `config`      | _object_           | Specify [configuration](/guides/references/configuration)                              |
+| `config`      | _object_           | Specify [configuration file](/guides/references/configuration)                         |
 | `configFile`  | _string / boolean_ | Path to the config file to be used. If `false` is passed, no config file will be used. |
 | `detached`    | _boolean_          | Open Cypress in detached mode                                                          |
 | `env`         | _object_           | Specify [environment variables](/guides/guides/environment-variables)                  |

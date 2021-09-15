@@ -162,9 +162,9 @@ This will automatically **prefix** [`cy.visit()`](/api/commands/visit) and
 
 <Alert type="info">
 
-Whenever you modify your configuration file, Cypress will automatically reboot
-itself and kill any open browsers. This is normal. Click on the spec file again
-to relaunch the browser.
+Whenever you modify your [configuration file](/guides/references/configuration),
+Cypress will automatically reboot itself and kill any open browsers. This is
+normal. Click on the spec file again to relaunch the browser.
 
 </Alert>
 
