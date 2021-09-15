@@ -104,6 +104,12 @@ workflows:
           install-command: yarn --frozen-lockfile
           executor: with-chrome-and-firefox
 
+      - unit-test:
+          name: 'Unit tests'
+          executor: node-executor
+          working_directory: ~/repo
+          command: yarn test:unit
+
       - link-check-changed-files:
           name: 'Broken link checker'
           requires:

@@ -48,7 +48,7 @@ module.exports = function directiveAttacher() {
           console.warn(prefix, ...args)
         }
 
-        let result
+        let result = { children: [] }
 
         try {
           result = fn(node, { index, parent, processor, error, warn })
@@ -56,11 +56,9 @@ module.exports = function directiveAttacher() {
           return error(err)
         }
 
-        if (result !== undefined) {
-          const parsed = processor.parse(result)
+        const parsed = processor.parse(result)
 
-          parent.children.splice(index, 1, ...parsed.children)
-        }
+        parent.children.splice(index, 1, ...parsed.children)
       }
     }
     visit(tree, processNode)
