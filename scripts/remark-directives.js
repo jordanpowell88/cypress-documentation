@@ -53,7 +53,7 @@ module.exports = function directiveAttacher() {
         try {
           result = fn(node, { index, parent, processor, error, warn })
         } catch (err) {
-          return error(`[${name}]`, err)
+          return error(err)
         }
 
         if (result !== undefined) {
